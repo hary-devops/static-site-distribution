@@ -13,7 +13,7 @@ provider "github" {
 
 
 data "github_repository" "static_site_distribution" {
-  fullfull_name = "hary-devops/static-site-distribution"
+  full_name = "hary-devops/static-site-distribution"
 }
 
 resource "github_repository_environment" "environment" {
