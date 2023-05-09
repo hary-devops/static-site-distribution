@@ -1,11 +1,10 @@
 provider "aws" {
-  alias = "ap-southeast-1"
-  allowed_account_ids = [ "${var.aws_account_id}" ]
+  allowed_account_ids = ["${var.aws_account_id}"]
 }
 
 module "webapp" {
-  source = "../../module/webapp"
-  aws_region = "ap-southeast-1"
-  app_name = "harysetiawan"
-  environment = "staging"
+  source      = "../../module/webapp"
+  aws_region  = var.aws_region
+  app_name    = var.application_name
+  environment = var.environment
 }
