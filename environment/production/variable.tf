@@ -13,3 +13,8 @@ variable "application_name" {
 variable "environment" {
   description = "Application environment"
 }
+
+
+variable "github_token" {
+  description = "Github Access Token"
+}

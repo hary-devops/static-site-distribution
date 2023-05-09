@@ -14,4 +14,5 @@ module "github" {
   aws_cloudfront_distribution_id = module.webapp.cdn_distribution_id
   aws_s3_bucket_name             = module.webapp.s3_bucket_name
   environment                    = var.environment
+  github_token                   = var.github_token
 }
