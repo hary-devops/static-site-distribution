@@ -22,7 +22,6 @@ resource "aws_s3_bucket_public_access_block" "public_block" {
   ignore_public_acls      = false
 }
 
-
 resource "aws_s3_bucket_acl" "webapp" {
   bucket = aws_s3_bucket.webapp.id
   acl    = "private"
