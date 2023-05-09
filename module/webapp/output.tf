@@ -3,7 +3,7 @@ output "s3_bucket_domain_name" {
   value       = module.bucket.s3_bucket_domain_name
 
   depends_on = [
-    aws_s3_bucket.webapp
+    module.bucket
   ]
 
 }
@@ -13,7 +13,7 @@ output "s3_bucket_name" {
   value       = module.bucket.s3_bucket_name
 
   depends_on = [
-    aws_s3_bucket.webapp
+    module.bucket
   ]
 
 }
@@ -23,7 +23,7 @@ output "s3_bucket_id" {
   value       = module.bucket.s3_bucket_id
 
   depends_on = [
-    aws_s3_bucket.webapp
+    module.bucket
   ]
 }
 
@@ -33,7 +33,7 @@ output "s3_bucket_arn" {
   value       = module.bucket.s3_bucket_arn
 
   depends_on = [
-    aws_s3_bucket.webapp
+    module.bucket
   ]
 }
 
